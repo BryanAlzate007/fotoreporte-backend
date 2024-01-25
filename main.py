@@ -57,7 +57,7 @@ async def mostrar_formulario():
 async def procesar_formulario(nombre: str, password: str):
     datos = {"nombre": nombre, "password": password}
     print(datos)
-    # Realiza aquí cualquier procesamiento adicional que necesites.
+    
 
     
 @app.get("/crear-reporte", response_class=HTMLResponse)

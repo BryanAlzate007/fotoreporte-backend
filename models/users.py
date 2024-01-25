@@ -5,7 +5,7 @@ from sqlalchemy import Column, Integer, String, DateTime
 
 class User(Base):
     
-    __tablename__="User"
+    __tablename__="Users"
     
     id = Column(Integer, primary_key= True, autoincrement=True)
     nombre = Column(String)
