@@ -10,7 +10,7 @@ m = folium.Map(
 
 
 html = """
-    <h1><img src="https://drive.google.com/file/d/1lGh9jti9mQIaXOcy4pExLwR2P74H_zGm/view" title="source: imgur.com" /></h1><br>
+    <h1><img src="https://i.imgur.com/xiLmUhk.png" title="source: imgur.com" /></h1><br>
     With a few lines of code...
     <p>
     <code>
