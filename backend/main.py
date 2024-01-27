@@ -32,14 +32,13 @@ async def formCreateUser():
     
 #recibiendo datos para crear usuario
 @app.post("/create", response_class=HTMLResponse)
-def create(username:str = Form(), cedula:int = Form(),password:str = Form(),mail:str =Form(),rol:str = Form()):
+def create(username:str = Form(), cedula:int = Form(),password:str = Form(),mail:str =Form()):
     new_user_data = {
     "nombre": username,
     "cedula": cedula,
     "password":password,
     "correo": mail,
-    "rol":rol
-      
+    "rol": "User"
     }
     new_user = UserModel(**new_user_data)
     db = Session()
