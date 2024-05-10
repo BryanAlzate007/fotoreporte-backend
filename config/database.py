@@ -1,15 +1,15 @@
-from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+# from sqlalchemy import create_engine
+# from sqlalchemy.ext.declarative import declarative_base
+# from sqlalchemy.orm import sessionmaker
 
-SQLALCHEMY_DATABASE_URL = 
-# SQLALCHEMY_DATABASE_URL = "postgresql://user:password@postgresserver/db"
+# SQLALCHEMY_DATABASE_URL = 
+# # SQLALCHEMY_DATABASE_URL = "postgresql://user:password@postgresserver/db"
 
-# Crea el motor de SQLAlchemy para PostgreSQL
-engine = create_engine(SQLALCHEMY_DATABASE_URL)
+# # Crea el motor de SQLAlchemy para PostgreSQL
+# engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
-# Crea la fábrica de sesiones para PostgreSQL
-Session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+# # Crea la fábrica de sesiones para PostgreSQL
+# Session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-# Declara la base de SQLAlchemy
-Base = declarative_base()
+# # Declara la base de SQLAlchemy
+# Base = declarative_base()
